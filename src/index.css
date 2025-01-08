@@ -1,0 +1,323 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  background-color: #121212;
+  transition: background-color 0.3s ease-in-out; 
+}
+
+/* Cabecera */
+.header {
+  padding: 15px 20px;  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;  
+}
+
+/* Botón CV */
+.cv-button-container {
+  display: flex;
+  align-items: center; 
+}
+
+/* Estilo del botón CV */
+.cv-button {
+  background-color: #1890ff;
+  border: none;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+
+/* Sección principal */
+.about-container {
+  display: flex;
+  flex-direction: row; 
+  justify-content: space-between; 
+  gap: 50px;
+  width: 100%; 
+  max-width: 1400px; 
+  margin: 50px auto 0;
+  align-items: center; 
+}
+
+
+/* Columna de la imagen */
+.about-avatar-container {
+  flex: 1;
+  display: flex;  
+  justify-content: flex-start;
+
+}
+
+.about-avatar {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+.about-avatar:hover {
+  transform: scale(1.05);
+}
+
+.about-text-container {
+  flex: 2;
+  text-align: left;
+}
+
+.about-title {
+  font-size: 36px;
+  margin-bottom: 15px;
+  color: #e0e0e0 !important;
+  transition: color 0.3s ease;
+}
+
+.about-title:hover,
+.about-subtitle:hover,
+.skills-title:hover,
+.contact-title:hover,
+.projects-title:hover {
+  color: #0077b5 !important;
+}
+
+.about-description {
+  font-size: 22px;
+  margin-bottom: 30px;
+  line-height: 1.8;
+  color: #e0e0e0;
+}
+
+.about-subtitle {
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: #e0e0e0 !important;
+}
+
+.about-university {
+  font-size: 20px;
+  line-height: 1.8;
+  color: #e0e0e0;
+}
+
+/* Columna de íconos */
+.about-icons-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; 
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+/* Íconos */
+.about-icon {
+  font-size: 44px;
+  color: #fff;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.about-icon:hover {
+  transform: scale(1.2);
+  color: #0056b3;
+}
+
+
+/* Sección de habilidades */
+.skills-section {
+  text-align: center;
+  padding: 40px;
+  margin-top: 80px;
+}
+
+.skills-title {
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #e0e0e0;
+}
+
+.skills-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.skills-tag {
+  margin: 10px;
+  display: inline-block;
+  text-align: center;
+  border: none;
+  background-color: transparent;
+  cursor: default;
+  color: #e0e0e0;
+  transition: transform 0.3s ease;
+}
+
+.skills-tag:hover {
+  transform: scale(1.05); 
+}
+
+.skills-logo {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 8px;
+  object-fit: contain;
+}
+
+.skills-name {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Sección de Proyectos */
+.projects-section {
+  padding: 40px;
+  background-color: #121212; 
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  margin-top: 80px;
+}
+
+.projects-title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #e0e0e0;
+  transition: color 0.3s ease;
+}
+
+/* Card de proyectos */
+.project-card-container {
+  padding: 0 15px;
+}
+
+.project-card {
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.project-card:hover {
+  transform: translateY(-5px); 
+}
+
+.project-image {
+  height: 200px;
+  object-fit: contain;
+}
+
+.project-tag {
+  margin-bottom: 5px;
+}
+
+.modal-image {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.project-details {
+  margin-top: 20px;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.github-link {
+  margin-top: 20px;
+  font-size: 16px;
+  display: inline-block;
+  text-decoration: underline;
+  color: #1890ff;
+}
+
+.github-icon {
+  margin-right: 5px;
+}
+
+/* Sección de Contacto */
+.contact-section {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #121212;
+}
+
+.contact-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #e0e0e0;
+}
+
+.contact-description {
+  color: #e0e0e0;
+}
+
+.success-message {
+  color: #4CAF50;
+  margin-top: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+  border: 1px solid #444;
+  padding: 10px;
+  margin-bottom: 10px;
+  max-width: 500px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact-form button {
+  padding: 10px 20px;
+  background-color: #1890ff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.contact-form button:hover {
+  background-color: #0056b3;
+}
+
+/* Respuesta al enviar el formulario */
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+}
+
+.submit-button {
+  padding: 10px 20px;
+  background-color: #1890ff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 20px;
+  background: #51565a;
+  color: #fff;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.footer p {
+  font-size: 1rem;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
